@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <link rel="stylesheet" href="countdown.css">
+</head>
+<body>
+    <section>  
+        <div class="container">  
+         <h3>Ulti Ginati Shuroo...</h3>
+         <h1>00:00</h1>  
+        </div>  
+    </section>  
+</body>
+
+<script>
+let timeSecond = 15;  
+const timeH = document.querySelector("h1");  
+displayTime(timeSecond);  
+const countDown = setInterval(() => {  
+ timeSecond--;  
+ displayTime(timeSecond);  
+ if (timeSecond == 0 || timeSecond < 1) {  
+  endCount();  
+  clearInterval(countDown);  
+ }  
+}, 1000);  
+function displayTime(second) {  
+    const hour = Math.floor(second / 60);
+    const min = Math.floor(second / 60);  
+    const sec = Math.floor(second % 60);  
+    timeH.innerHTML = `  
+    ${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}  
+    `;  
+}  
+function endCount() {  
+ timeH.innerHTML ="Time Out ";  
+}  
+
+</script>
+</html>

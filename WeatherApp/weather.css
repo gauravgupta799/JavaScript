@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("image/cloud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* background-position: center; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app-main{
+    background-color: rgba(164, 194, 219, 0.6);
+    width: 50vh;
+    height: 60vh;
+    text-align: center;
+    margin-top:50px;
+    margin-left: 5%;
+
+}
+.searchInputBox{
+    background-color: rgb(29, 29, 31);
+    padding: 10px;
+}
+.searchInputBox> input{
+    padding:5px;
+    font-size:20px;
+    border-radius: 4px 6px 1px 5px;
+}
+.weather-body{
+    /* /*padding:20px; */
+    margin-top: 20px;
+    margin-left:20px;
+    line-height:2;
+    /* background-color:rgb(186, 225, 226); */
+    text-align:center;
+    height:350px;
+    width:90%;
+    border-radius:10px;
+}
+.location-details{
+    line-height:2;
+    /* background-color:lightcoral; */
+    /* text-align:center */
+    font-size:20px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .weather-status{
+    font-size:20px;
+    font-weight:bold;
+    margin-top:20px;
+    line-height:2;
+ }
+ .weather-status>#temp{
+     font-size:50px;
+
+ }
+
+  
+
