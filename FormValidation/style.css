@@ -1,0 +1,88 @@
+body{
+    background: #000;
+}
+
+.form-container {
+    width:60vw;
+    padding: 20px;
+    border-radius:10px;
+    margin-top: 100px;
+    background: #222;
+    border-top: 2px solid greenyellow;
+    border-bottom: 2px solid rgb(15, 167, 20);
+    border-left: 2px solid rgb(204, 12, 234);
+    border-right: 2px solid rgb(9, 238, 223);
+}
+#title {
+    font-family: "Poppins" sans-serif;
+    font-weight: 500;
+    color: #06c43f;
+    text-align: center;
+}
+label {
+    color:rgb(23, 148, 131);
+    font-size: 16px;
+    font-family: cursive;
+}
+.form-control{
+    background-color:rgb(76, 73, 73);
+    outline: none;
+    border: none;
+    color:#fff;
+}
+input::placeholder{
+    font-size:14px;
+    color:rgb(232, 226, 226);
+    font-weight: 500;
+    letter-spacing:1px;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing:1px;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color:#000;
+  border: 3px solid #3c67e3;
+  border-radius:10px;
+  outline: none;
+}
+
+.button:hover{
+    animation:pulsate 1s ease-in-out;
+    background-color:#fff;
+    color: #000;
+}
+
+@media screen and (max-width:480px){
+    .form-container{
+        width:90vw;
+    }
+    #title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:345px){
+    #title {
+        font-size: 24px;
+    }
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #5ddcff , 0 0 50px #4e00c2;
+    }
+}
+
+@keyframes moveGradient {
+50% {
+    background-position: 100% 50%;
+}
+}
+  
+
+  
